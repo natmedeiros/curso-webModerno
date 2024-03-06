@@ -13,7 +13,9 @@ let comparaComThisArrow = param => console.log(this === param)
 comparaComThisArrow(global)
 comparaComThisArrow(module.exports)
 
-comparaComThisArrow
+comparaComThisArrow = comparaComThisArrow.bind(obj)
+comparaComThisArrow(obj)
+comparaComThisArrow(module.exports)
 
 /* Vantagens da Arrow Functio: além dde ser escrita de forma reduzida, com funções 
 pequenas, de uma única linha. O "This" não muda e é mais determinado dentro da arrow function.*/

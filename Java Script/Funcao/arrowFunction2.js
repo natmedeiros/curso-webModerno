@@ -6,5 +6,4 @@ function Pessoa() {
         console.log(this.idade)
     }, 1000)
 }
-
 new Pessoa
